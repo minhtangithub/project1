@@ -1,0 +1,67 @@
+/* mobile  */
+@media (max-width : 600px) {
+    .navbar {
+        display: block;
+    }
+
+    .navbar__buttons {
+        width: 100%;
+        display: block;
+    }
+
+    .navbar__buttons-item--active,
+    .navbar__buttons-item,
+    .navbar__book-btn {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    .row {
+        display: block;
+    }
+
+    .hotel-name {
+        width: 100%;
+    }
+
+    .inputs-row {
+        display: block;
+    }
+
+    .room-option {
+        display: block;
+    }
+
+    .about {
+        display: block;
+    }
+
+    .brief-contact {
+        display: block;
+    }
+
+    .places__pictures {
+        display: block;
+    }
+
+    .places__pictures-row {
+        display: block;
+        margin: 0px -8px;
+    }
+}
+/* tablet  */
+@media (min-width : 600px) and (max-width : 992px) {
+    .hotel-name {
+        width: 66.67%;
+    }
+
+    .about {
+        display: block;
+    }
+
+}
+/* PC  */
+@media (min-width : 99200px) {
+    
+}

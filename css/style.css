@@ -25,16 +25,17 @@ body {
     background-color: #616161!important;
 }
 
-/* header  */
-#header {
-
+.btn {
+    cursor: pointer;
 }
+
+/* header  */
+
     /* navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
     background-color: var(--white);
-
 }
 
 .navbar__buttons {
@@ -99,14 +100,16 @@ body {
 }
 
 .header-content img {
-    width: 100%;
+    max-width: 100%;
+    min-width: 1000px;
 }
 
 .hotel-name {
     position: absolute;
-    left: 16px;
-    top: 30%;
-    width: 49.999%;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%,-50%);
+    padding: 8px 16px;
 }
 
 .hotel-name__heading {
@@ -159,6 +162,10 @@ body {
     line-height: 2.25rem;
 }
 
+.hotel-name__inputs-button:hover {
+    color: #000!important;
+    background-color: #ccc!important;
+}
 .hotel-name__inputs-button i {
     margin-right: 12px;
 }
@@ -381,6 +388,16 @@ body {
     width: 100%;
     vertical-align: middle;
 }
+
+.picture-name {
+    position: absolute;
+    padding: 8px 16px;
+    left: 8px;
+    bottom: 0;
+    color: var(--white);
+    font-size: 1.8rem;
+}
+
 .places__pictures {
     padding: 16px 8px;  
     display: flex;
@@ -390,10 +407,13 @@ body {
     flex: 1;
     padding: 0 8px;
     margin-bottom: 16px;
+    position: relative;
+
 }
 
 .places__pictures-small {
     flex: 1;
+    position: relative;
     
 }
 
@@ -407,4 +427,141 @@ body {
     flex: 1;
     padding: 0 8px;
     margin-bottom: 16px;
+    position: relative;
+}
+
+    /* subcribe */
+.subcribe {
+    margin: 32px 0;
+    padding: 32px 16px;
+    background-color: var(--text-color);
+    opacity: 0.7;
+}
+
+.subcribe:hover {
+    opacity: 1;
+}
+
+.subcribe__heading {
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 3.6rem;
+    margin: 10px 0;
+    color: var(--white);
+}
+
+.subcribe__content {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 15px 0;
+    color: var(--white);
+
+}
+
+.subcribe__label {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--white);
+}
+
+.subcribe__input {
+    display: block;
+    padding: 8px;
+    width: 100%;
+    font-size: 1.5rem;
+    border : 1px solid #ccc;
+    line-height: 2.4rem;
+}
+
+.subcribe__btn {
+    color: #fff;
+    background-color: #f44336;
+    margin-top: 16px;
+    padding: 8px 16px;
+    font-size: 1.5rem;
+    border: none;
+    line-height: 2.25rem;
+}
+
+    /* contact */
+.contact {
+    padding: 0 16px;
+}
+
+.contact__heading {
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 3.6rem;
+    margin: 10px 0;
+}
+
+.contact__content {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 15px 0;
+}
+
+.contact__info {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.contact__info i {
+    width: 30px;
+    color: var(--red);
+}
+
+.contact__input {
+    display: block;
+    padding: 16px 8px;
+    margin: 15px 0;
+    width: 100%;
+    font-size: 1.5rem;
+    border : 1px solid #ccc;
+    line-height: 2.4rem;
+}
+
+.contact__btn {
+    font-size: 1.5rem;
+    color: var(--white);
+    background-color: var(--text-color);
+    border: none;
+    padding: 12px 24px;
+    margin: 15px 0;
+}
+
+/* footer */
+.footer {
+    background-color: var(--text-color);
+    padding: 32px 0;
+    margin-top: 16px;
+}
+
+.footer__heading {
+    font-size: 1.8rem;
+    margin: 10px 0;
+    color: var(--white);
+    text-align: center;
+    line-height: 27px;
+    font-weight: 400;
+} 
+
+.footer__icons {
+    padding: 16px 0;
+    font-size: 2.4rem;
+    color: var(--white);
+    text-align: center;
+}
+
+.footer__icons i:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.footer__origin,
+.footer__origin a{
+    text-align: center;
+    color: var(--white);
+    font-size: 1.5rem;
 }

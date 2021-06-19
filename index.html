@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <script src="https://kit.fontawesome.com/8cfcc5b0a7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
 </head>
 <body>
     <header id="header">
@@ -17,23 +18,23 @@
         <nav class="navbar">
             <ul class="navbar__buttons">
                 <li class="navbar__buttons-item--active">
-                    <a href="" class="navbar__buttons-item-link">
+                    <a href="#" class="navbar__buttons-item-link">
                         <i class="fa fa-bed"></i>
                         Logo
                     </a>
                 </li>
                 <li class="navbar__buttons-item">
-                    <a href="" class="navbar__buttons-item-link">
+                    <a href="#rooms" class="navbar__buttons-item-link">
                         Rooms
                     </a>
                 </li>
                 <li class="navbar__buttons-item">
-                    <a href="" class="navbar__buttons-item-link">
+                    <a href="#about" class="navbar__buttons-item-link">
                         About
                     </a>
                 </li>
                 <li class="navbar__buttons-item">
-                    <a href="" class="navbar__buttons-item-link">
+                    <a href="#contact" class="navbar__buttons-item-link">
                         Contact
                     </a>
                 </li>
@@ -84,7 +85,7 @@
                             <input type="number" min="0" max="6" value="0" class="input">
                         </div>
                     </div>
-                    <button class="hotel-name__inputs-button btn">
+                    <button class="btn hotel-name__inputs-button">
                         <i class="fa fa-search"></i>
                         Search availability
                     </button>
@@ -94,7 +95,7 @@
         </div>
     </header>
     <div class="content">
-        <div class="slogan">
+        <div class="slogan" id="rooms">
             <h2 class="slogan__heading">
                 Rooms
             </h2>
@@ -222,7 +223,7 @@
                 </div>
             </div>
         </div>
-        <div class="about">
+        <div class="about" id="about">
             <div class="about__paragraph">
                 <h3 class="about__paragraph-heading">
                     About
@@ -273,22 +274,27 @@
             <div class="places__pictures">
                 <div class="places__pictures-large">
                     <img src="./assets/img/place-large.jpg" alt="">
+                    <span class="picture-name">Cinque Terre</span>
                 </div>
                 <div class="places__pictures-small">
                     <div class="places__pictures-row">
                         <div class="places__pictures-small-item">
                             <img src="./assets/img/place-small-1.jpg" alt="">
+                            <span class="picture-name">New York</span>
                         </div>
                         <div class="places__pictures-small-item">
                             <img src="./assets/img/place-small-2.jpg" alt="">
+                            <span class="picture-name">San Francisco</span>
                         </div>
                     </div>
                     <div class="places__pictures-row">
                         <div class="places__pictures-small-item">
                             <img src="./assets/img/place-small-3.jpg" alt="">
+                            <span class="picture-name">Pisa</span>
                         </div>
                         <div class="places__pictures-small-item">
                             <img src="./assets/img/place-small-4.jpg" alt="">
+                            <span class="picture-name">Paris</span>
                         </div>
                     </div>
                 </div>
@@ -296,14 +302,51 @@
 
         </div>
         <div class="subcribe">
-
+            <h3 class="subcribe__heading">
+                Get the best offers first!
+            </h3>
+            <h6 class="subcribe__content">
+                Join our newsletter.
+            </h6>
+            <label class="subcribe__label" for="">
+                E-mail
+            </label>
+            <input type="text" class="subcribe__input" placeholder="Your Email address">
+            <button class="subcribe__btn btn">Subcribe</button>
         </div>
-        <div class="contact">
-
+        <div class="contact" id="contact">
+            <h3 class="contact__heading">
+                Contact
+            </h3>
+            <h6 class="contact__content">
+                If you have any questions, do not hesitate to ask them.
+            </h6>
+            <p class="contact__info">
+                <i class="fa fa-map-marker"></i> Chicago, US
+            </p>
+            <p class="contact__info">
+                <i class="fa fa-phone"></i> Phone: +00 151515
+            </p>
+            <p class="contact__info">
+                <i class="fa fa-envelope"></i> Email: mail@mail.com
+            </p>
+            <input type="text" class="contact__input" placeholder="Name">
+            <input type="text" class="contact__input" placeholder="Email">
+            <input type="text" class="contact__input" placeholder="Message">
+            <button class="contact__btn btn">SEND MESSAGE</button>
         </div>
     </div>
     <footer class="footer">
-
+        <h5 class="footer__heading">Find Us On</h5>
+        <div class="footer__icons">
+          <i class="fa fa-facebook-official"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-snapchat"></i>
+          <i class="fa fa-pinterest-p"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-linkedin"></i>
+        </div>
+        <p class="footer__origin">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
     </footer>
 </body>
 </html>
