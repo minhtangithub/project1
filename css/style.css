@@ -1,0 +1,146 @@
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-family: 'Raleway', sans-serif;
+    font-size: 62.5%;
+    line-height: 2.4rem;    
+    box-sizing: border-box;
+}
+
+:root {
+    --red: rgb(244, 67, 54);
+    --background: #f1f1f1;
+    --text-color: #000000;
+    --white: #fff;
+}
+
+body {
+    background-color: var(--background);
+}
+
+/* header  */
+#header {
+
+}
+    /* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--white);
+
+}
+
+.navbar__buttons {
+    list-style: none;
+    font-size: 1.8rem;
+    margin: 0;
+    padding: 0;
+    line-height: 2.7rem;
+    display: flex;
+}
+
+.navbar__buttons-item--active {
+    background-color: var(--red);
+    padding: 8px 16px;
+}
+
+.navbar__buttons-item--active i {
+    margin-right: 12px;
+    font-size: 1.6rem;
+}
+.navbar__buttons-item--active a {
+    color : var(--white);
+}
+
+.navbar__buttons-item {
+    padding: 8px 16px;
+}
+
+.navbar__buttons-item-link {
+    text-decoration: none;
+    color: var(--text-color);
+
+}
+
+.navbar__buttons-item--active:hover,
+.navbar__buttons-item:hover,
+.navbar__book-btn:hover {
+    background-color: #ccc;
+}
+
+.navbar__buttons-item--active:hover a {
+    color: #000;
+}
+
+.navbar__book-btn {
+    line-height: 2.7rem;
+    padding: 8px 16px;
+    background-color: rgb(241, 241, 241);
+}
+
+.navbar__book-btn-link {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: var(--text-color);
+}
+
+    /* header content  */
+.header-content {
+    max-width: 1500px;
+    position: relative;
+}
+
+.header-content img {
+    width: 100%;
+}
+
+.hotel-name {
+    position: absolute;
+    left: 16px;
+    top: 125px;
+    width: 49.999%;
+}
+
+.hotel-name__heading {
+    background-color: var(--red);
+    color : var(--white);
+    font-size: 3rem;
+    line-height: 45px;
+    padding : 10px 16px;
+}
+
+.hotel-name__heading i {
+    margin-right: 12px;
+}
+
+.hotel-name__inputs {
+    background-color: var(--white);
+    padding: 16px;
+}
+
+.row {
+    margin-left : -16px;
+    margin-right: -16px;
+}
+.input-wrap {
+    display: inline-block;
+    width: 49%;
+    padding: 0 8px;
+    margin-bottom: 16px;
+}
+
+.label {
+    font-size: 1.5rem;
+}
+
+.input {
+    display: block;
+    padding: 8px;
+    width: 100%;
+    font-size: 1.5rem;
+    border : 1px solid #ccc;
+    line-height: 2.4rem;
+
+}
